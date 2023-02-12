@@ -10,5 +10,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
+RUN pip install python-dotenv
+RUN pip install --upgrade deepl
 
 RUN pip install git+https://github.com/openai/whisper.git
